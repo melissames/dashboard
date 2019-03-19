@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 // import { packetApi } from '../../.env';
-import * as json from '../assets/json/packet.json';
+import * as packetJson from '../assets/json/packet.json';
+import * as photoJson from '../assets/json/photos.json';
 
 @Component({
   selector: 'app-root',
@@ -11,13 +12,14 @@ import * as json from '../assets/json/packet.json';
 export class AppComponent {
   title = 'dashboard';
   // URL = `https://api.packet.net/projects/${packetApi.ID}/events`;
-  data = json.plans;
+  data = packetJson.plans;
+  photos = photoJson.photos;
+
 
   constructor(private http: HttpClient){
   }
 
   ngOnInit() {
-    console.log(this.data)
     // const headers = {
     //   'Access-Control-Allow-Origin': '*',
     //   'X-Auth-Token': packetApi.PACKET_KEY,
