@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+// import { packetApi } from '../../.env';
+import * as json from '../assets/json/packet.json';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,23 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'dashboard';
+  // URL = `https://api.packet.net/projects/${packetApi.ID}/events`;
+  data = json.plans;
+
+  constructor(private http: HttpClient){
+  }
+
+  ngOnInit() {
+    console.log(this.data)
+    // const headers = {
+    //   'Access-Control-Allow-Origin': '*',
+    //   'X-Auth-Token': packetApi.PACKET_KEY,
+    //   'Accept': 'application/json'
+    // };
+    //
+    // return this.http.get(this.URL, {headers: headers})
+    //   .subscribe((data: any[]) => this.data = data)
+
+  }
+
 }
