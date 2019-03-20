@@ -1,0 +1,19 @@
+img {
+  height: 40%;
+  width: 40%;
+  border-radius: 3px;
+  box-shadow: 2px 2px #dadada;
+}
+
+img:hover {
+  opacity: 0.5;
+}
+
+.plan-title {
+  padding: 20px;
+}
+
+.plan-list {
+  padding-left: 20px;
+  word-wrap: break-word;
+}

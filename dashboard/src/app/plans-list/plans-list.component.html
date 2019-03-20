@@ -1,3 +1,10 @@
-<div>
-  plans-list works!
+<h3 class="plan-title">Your Plans:</h3>
+<div
+  class="plan-list"
+  *ngFor="let plan of plans; let i = index"
+  id="{{ plan.id }}">
+  <div class="plan-card">    
+    <h4>{{ plan.name }}</h4>
+    <img class="plan-photo" src="{{ photos[i] }}" alt="">
+  </div>
 </div>

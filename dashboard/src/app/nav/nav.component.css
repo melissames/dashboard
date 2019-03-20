@@ -17,6 +17,7 @@ nav {
   left: 0;
   display: flex;
   justify-content: space-between;
+  z-index: 999;
 }
 
 h1 {

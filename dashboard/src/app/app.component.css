@@ -5,16 +5,18 @@
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: flex;
 }
 
 .plans-filter {
+  position: fixed;
   background-color: #ffffff;
-  flex-grow: 1;
-  margin-right: 2px;
+  float: left;
+  height: 100%;
+  width: 20%;
 }
 
 .plans-list {
   background-color: #ffffff;
-  flex-grow: 6;
+  width: 79.75%;
+  float: right;
 }

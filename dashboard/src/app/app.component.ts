@@ -12,7 +12,7 @@ import * as photoJson from '../assets/json/photos.json';
 export class AppComponent {
   title = 'Packet Plans';
   // URL = `https://api.packet.net/projects/${packetApi.ID}/plans`;
-  data = packetJson.plans;
+  plans = packetJson.plans;
   photos = photoJson.photos;
 
 
