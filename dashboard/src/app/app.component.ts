@@ -10,8 +10,8 @@ import * as photoJson from '../assets/json/photos.json';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'dashboard';
-  // URL = `https://api.packet.net/projects/${packetApi.ID}/events`;
+  title = 'Packet Plans';
+  // URL = `https://api.packet.net/projects/${packetApi.ID}/plans`;
   data = packetJson.plans;
   photos = photoJson.photos;
 
